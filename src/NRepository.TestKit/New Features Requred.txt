@@ -1,2 +1,0 @@
-﻿Cahing interceptor
-Logging event handler

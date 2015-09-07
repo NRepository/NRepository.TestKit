@@ -135,7 +135,7 @@ namespace NRepository.TestKit
             {
                 if (prop.PropertyType == typeof(string))
                 {
-                    prop.SetValue(parentObject, prop.Name, null);
+                    prop.SetValue(parentObject, prop.Name + _currentCount++, null);
                     return;
                 }
 

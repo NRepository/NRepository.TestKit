@@ -36,9 +36,9 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NRepository.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=71ae69dfa47b271c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NRepository.Core.3.1.0.0\lib\net45\NRepository.Core.dll</HintPath>
+    <Reference Include="NRepository.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=71ae69dfa47b271c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NRepository.Core.3.3.0.0\lib\net45\NRepository.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -77,9 +77,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="New Features Requred.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
