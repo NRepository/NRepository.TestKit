@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NRepository.TestKit</id>
-    <version>3.3.0.0</version>
+    <version>3.3.1.0</version>
     <title>NRepository TestKit</title>
     <authors>John Kelly</authors>
     <licenseUrl>https://github.com/j-kelly/NRepository.TestKit/blob/master/LICENSE</licenseUrl>
