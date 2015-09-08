@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NRepository.TestKit</id>
-    <version>3.3.1.0</version>
+    <version>3.3.2.0</version>
     <title>NRepository TestKit</title>
     <authors>John Kelly</authors>
     <licenseUrl>https://github.com/j-kelly/NRepository.TestKit/blob/master/LICENSE</licenseUrl>
@@ -11,8 +11,7 @@
     <description>NRepository.TestKit is a collection of helper classes for NRepsoitory.</description>
     <iconUrl>https://bluepear-public.sharepoint.com/SiteAssets/NRepository.png</iconUrl>
     <releaseNotes>
-1. Updated to use NRepository.Core V3.3.0
-2. Added counter to EntityGenerator string values
+1. Updated EntityGenerator to create objects where no default ctor is available
      </releaseNotes>
     <copyright>© Blue Pear (Software) Ltd. 2015</copyright>
     <tags>Repository EF entity framework cqrs core Test unit of work</tags>
