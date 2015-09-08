@@ -110,9 +110,40 @@ namespace NRepository.TestKit
                 return retValList;
             }
 
-            var retVal = Activator.CreateInstance(type, true);
-            AddValues(retVal, retVal.GetType().GetProperties());
-            return retVal;
+            try
+            {
+                // try default ctor
+                var retVal = Activator.CreateInstance(type, true);
+                AddValues(retVal, retVal.GetType().GetProperties());
+                return retVal;
+            }
+            catch (MissingMethodException ex)
+            {
+                try
+                {
+                    // ok now try first ctor
+                    var ctorParameters = new List<object>();
+
+                    var ctor = type.GetConstructors().First();
+                    var parameters = ctor.GetParameters();
+                    foreach (var prm in parameters)
+                    {
+                        var instance = CreateEntity(prm.ParameterType);
+                        ctorParameters.Add(instance);
+                    }
+
+                    var retVal = Activator.CreateInstance(type, ctorParameters.ToArray());
+                    AddValues(retVal, retVal.GetType().GetProperties());
+                    return retVal;
+                }
+                catch (Exception)
+                {
+                    if (EntityGeneratorOption.HasFlag(EntityGeneratorOptions.IgnoreExceptions))
+                        return null;
+
+                    throw;
+                }
+            }
         }
 
         private void AddValues(object parentObject, PropertyInfo[] properties)

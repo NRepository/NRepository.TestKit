@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRepository.TestKit", "NRepository.TestKit\NRepository.TestKit.csproj", "{857BDFC6-4395-43D9-B298-F1BD4655A895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRepository.TestKit.Tests", "NRepository.TestKit.Tests\NRepository.TestKit.Tests.csproj", "{1E7279D4-CB29-4465-8E3C-7261479DAEF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,12 @@ Global
 		{857BDFC6-4395-43D9-B298-F1BD4655A895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{857BDFC6-4395-43D9-B298-F1BD4655A895}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{857BDFC6-4395-43D9-B298-F1BD4655A895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7279D4-CB29-4465-8E3C-7261479DAEF4}.CSHARP_40|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7279D4-CB29-4465-8E3C-7261479DAEF4}.CSHARP_40|Any CPU.Build.0 = Release|Any CPU
+		{1E7279D4-CB29-4465-8E3C-7261479DAEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7279D4-CB29-4465-8E3C-7261479DAEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7279D4-CB29-4465-8E3C-7261479DAEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7279D4-CB29-4465-8E3C-7261479DAEF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
