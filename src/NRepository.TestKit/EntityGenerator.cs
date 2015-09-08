@@ -11,6 +11,7 @@ namespace NRepository.TestKit
         private const int MaxDepthConst = 3;
 
         private int _currentCount = 1;
+        private int _dateCount = 1;
         private int _depthCounter = -1;
 
         public EntityGenerator()
@@ -128,7 +129,7 @@ namespace NRepository.TestKit
                     var parameters = ctor.GetParameters();
                     foreach (var prm in parameters)
                     {
-                        var instance = CreateEntity(prm.ParameterType);
+                        var instance = GetValue(prm.ParameterType);
                         ctorParameters.Add(instance);
                     }
 
@@ -173,7 +174,8 @@ namespace NRepository.TestKit
                 if (prop.PropertyType == typeof(DateTime) ||
                     prop.PropertyType == typeof(DateTime?))
                 {
-                    prop.SetValue(parentObject, DateTime.Today, null);
+                    var date = GetValue(prop.PropertyType);
+                    prop.SetValue(parentObject, date, null);
                     return;
                 }
 
@@ -264,6 +266,9 @@ namespace NRepository.TestKit
 
             if (type == typeof(DateTime) || type == typeof(DateTime?))
             {
+                if (EntityGeneratorOption.HasFlag(EntityGeneratorOptions.IncrementDates))
+                    return DateTime.Today.AddDays(_dateCount++);
+
                 return DateTime.Today;
             }
 

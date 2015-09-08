@@ -1,8 +1,6 @@
 namespace NRepository.TestKit
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
 
     [Flags]
     public enum EntityGeneratorOptions
@@ -10,5 +8,6 @@ namespace NRepository.TestKit
         None,
         IgnoreExceptions = 1,
         SetPrivateProperties = 2,
+        IncrementDates = 3
     }
 }
