@@ -6,14 +6,14 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("NRepository.TestKit")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyVersion("3.3.2.0")]
-[assembly: AssemblyFileVersion("3.3.2.0")]
-[assembly: AssemblyInformationalVersion("3.3.2")]
+[assembly: AssemblyVersion("4.0.0.0")]
+[assembly: AssemblyFileVersion("4.0.0.0")]
+[assembly: AssemblyInformationalVersion("4.0.0")]
 
 [assembly: AssemblyDescription("See https://nrepository.codeplex.com")]
 [assembly: AssemblyCompany("Blue Pear (Software) Ltd.")]
 [assembly: AssemblyProduct("Blue Pear Public Libs")]
-[assembly: AssemblyCopyright("© Blue Pear 2015")]
+[assembly: AssemblyCopyright("© John Kelly 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

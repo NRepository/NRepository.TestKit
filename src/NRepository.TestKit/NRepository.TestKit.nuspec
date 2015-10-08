@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NRepository.TestKit</id>
-    <version>3.3.2.0</version>
+    <version>4.0.0.0</version>
     <title>NRepository TestKit</title>
     <authors>John Kelly</authors>
     <licenseUrl>https://github.com/j-kelly/NRepository.TestKit/blob/master/LICENSE</licenseUrl>
@@ -11,15 +11,15 @@
     <description>NRepository.TestKit is a collection of helper classes for NRepsoitory.</description>
     <iconUrl>https://bluepear-public.sharepoint.com/SiteAssets/NRepository.png</iconUrl>
     <releaseNotes>
-1. Updated EntityGenerator to create objects where no default ctor is available
+    1. Updated to 4.5.2
      </releaseNotes>
-    <copyright>© Blue Pear (Software) Ltd. 2015</copyright>
+    <copyright>© John Kelly. 2015</copyright>
     <tags>Repository EF entity framework cqrs core Test unit of work</tags>
     <dependencies>
-      <dependency id="NRepository.Core" version="3.3.0" />
+      <dependency id="NRepository.Core" version="4.0.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\release\NRepository.TestKit.dll" target="lib\net45" />
+    <file src="bin\release\NRepository.TestKit.dll" target="lib\net452" />
   </files>
 </package>
